@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Course Registration Portal - About Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img alt="Institute logo" src="./images/cvr.webp" />
+          <span class="fw-semibold">CVR College of Engineering</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample"
+          aria-controls="navbarsExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#login"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-4">
+      <section class="mb-4">
+        <h1 class="fw-bold">About Us</h1>
+        <p class="text-muted">
+          CVR College of Engineering is built on the belief that practical
+          learning creates confident careers.
+        </p>
+      </section>
+
+      <section class="row g-4 mb-4">
+        <div class="col-lg-6">
+          <div class="card h-100 p-3" style="border-radius: 16px">
+            <h3 class="fw-bold">Institute History</h3>
+            <p class="text-muted">
+              Founded in 2015, CVR College of Engineering has trained thousands
+              of learners through curriculum-led, project-first instruction.
+              update our courses to match industry needs.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card h-100 p-3" style="border-radius: 16px">
+            <h3 class="fw-bold">Vision</h3>
+            <p class="text-muted">
+              To empower students with job-ready skills in emerging technologies
+              through hands-on guidance and mentorship.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card h-100 p-3" style="border-radius: 16px">
+            <h3 class="fw-bold">Mission</h3>
+            <p class="text-muted">
+              Provide structured training, real projects, and clear career
+              pathways—so learners can confidently apply knowledge in real
+              scenarios.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card h-100 p-3" style="border-radius: 16px">
+            <h3 class="fw-bold">Why LearnSphere?</h3>
+            <ul class="text-muted mb-0">
+              <li>Small batch learning</li>
+              <li>Projects + code reviews</li>
+              <li>Career guidance & mock interviews</li>
+              <li>Support even after course completion</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <div class="mb-3">
+          <h2 class="fw-bold mb-0">Faculty Details</h2>
+          <p class="text-muted mb-0">
+            Meet experienced instructors who guide every step.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="https://picsum.photos/seed/fac1/600/400"
+                alt="Faculty"
+              />
+              <div class="card-body">
+                <div class="fw-bold fs-5">Dr. Ananya Gupta</div>
+                <div class="text-muted">Data Science & AI</div>
+                <p class="small text-muted mt-2 mb-3">
+                  Specializes in ML evaluation, data pipelines, and practical AI
+                  projects.
+                </p>
+                <button
+                  class="btn btn-outline-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#facultyModal"
+                  data-name="Dr. Ananya Gupta"
+                  data-topic="Data Science & AI"
+                  data-bio="Focus: ML models, responsible AI, and project mentoring."
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="https://picsum.photos/seed/fac2/600/400"
+                alt="Faculty"
+              />
+              <div class="card-body">
+                <div class="fw-bold fs-5">Mr. Vikram Rao</div>
+                <div class="text-muted">Web Development</div>
+                <p class="small text-muted mt-2 mb-3">
+                  Teaches modern front-end practices and helps students ship
+                  responsive web apps.
+                </p>
+                <button
+                  class="btn btn-outline-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#facultyModal"
+                  data-name="Mr. Vikram Rao"
+                  data-topic="Web Development"
+                  data-bio="Focus: HTML/CSS/JS, Bootstrap, real project guidance."
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="https://picsum.photos/seed/fac3/600/400"
+                alt="Faculty"
+              />
+              <div class="card-body">
+                <div class="fw-bold fs-5">Ms. Sara Menon</div>
+                <div class="text-muted">Cloud & Java</div>
+                <p class="small text-muted mt-2 mb-3">
+                  Mentors cloud deployment and backend fundamentals for scalable
+                  systems.
+                </p>
+                <button
+                  class="btn btn-outline-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#facultyModal"
+                  data-name="Ms. Sara Menon"
+                  data-topic="Cloud & Java"
+                  data-bio="Focus: cloud fundamentals, APIs, scalable application design."
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="alert alert-warning">
+        <div class="fw-semibold">Want to start today?</div>
+        <div class="small text-muted">
+          Register from the registration page to reserve your seat.
+        </div>
+        <a class="btn btn-brand text-white mt-2" href="register.html"
+          >Register</a
+        >
+      </section>
+    </main>
+
+    <!-- Faculty Modal -->
+    <div
+      class="modal fade"
+      id="facultyModal"
+      tabindex="-1"
+      aria-labelledby="facultyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="facultyModalLabel">
+              Faculty Profile
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="fw-bold fs-4" id="facultyName">Name</div>
+            <div class="text-muted" id="facultyTopic">Topic</div>
+            <p class="mt-3 text-muted" id="facultyBio">Bio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="loginModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="••••••••"
+                />
+              </div>
+              <button type="button" class="btn btn-brand text-white w-100">
+                Login
+              </button>
+              <div class="text-muted small mt-2">
+                (Demo modal - no backend connected)
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="fw-bold mb-2">CVR College of Engineering</div>
+            <div class="text-light small">
+              Training for future-ready careers.
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="fw-semibold mb-2">Address</div>
+            <div class="text-light small">
+              221B, Knowledge Street, Tech City, India
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="fw-semibold mb-2">Contact</div>
+            <div class="text-light small">Phone: +91 98765 43210</div>
+            <div class="text-light small">Email: support@cvrcoe.example</div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-wrap gap-3 align-items-center justify-content-between mt-4 pt-3 border-top border-light border-opacity-25"
+        >
+          <div class="text-light small">
+            © <span id="year"></span> CVR College of Engineering . All rights
+            reserved.
+          </div>
+          <div class="d-flex gap-3">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const facultyModal = document.getElementById("facultyModal");
+      facultyModal.addEventListener("show.bs.modal", (event) => {
+        const button = event.relatedTarget;
+        document.getElementById("facultyName").textContent =
+          button.getAttribute("data-name") || "";
+        document.getElementById("facultyTopic").textContent =
+          button.getAttribute("data-topic") || "";
+        document.getElementById("facultyBio").textContent =
+          button.getAttribute("data-bio") || "";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Course Registration Portal - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img alt="Institute logo" src="./images/cvr.webp" />
+          <span class="fw-semibold">CVR College Of Engineering</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample"
+          aria-controls="navbarsExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#login"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-4">
+      <!-- Hero / Carousel -->
+      <section class="hero p-4 p-md-5 mb-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold section-title">
+              Build Skills. Register Fast.
+            </h1>
+            <p class="text-muted fs-5 mb-4">
+              A training institute for Web Development, Programming, Data
+              Science, AI, and Cloud—designed for real-world careers.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-brand text-white" href="courses.html"
+                >Explore Courses</a
+              >
+              <a class="btn btn-outline-primary" href="register.html"
+                >Register Now</a
+              >
+            </div>
+            <div class="mt-4 d-flex gap-3">
+              <div>
+                <div class="fw-bold fs-5">6+ Tracks</div>
+                <div class="text-muted">Curated learning paths</div>
+              </div>
+              <div>
+                <div class="fw-bold fs-5">Career Focus</div>
+                <div class="text-muted">Projects & guidance</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div
+              id="heroCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner rounded-4 overflow-hidden border">
+                <div class="carousel-item active">
+                  <img
+                    src="./images/web-development.jpg"
+                    class="d-block w-100"
+                    alt="Learning banner 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/data-science.jpg"
+                    class="d-block w-100"
+                    alt="Learning banner 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/ai.jpg"
+                    class="d-block w-100"
+                    alt="Learning banner 3"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Courses -->
+      <section class="mb-5">
+        <div class="d-flex align-items-end justify-content-between mb-3">
+          <div>
+            <h2 class="fw-bold mb-0">Featured Courses</h2>
+            <p class="text-muted mb-0">
+              Top programs students register every month.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="./images/wb1.jpg"
+                alt="Web Development"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Web Development</h5>
+                <div class="text-muted">Duration: 8 Weeks</div>
+                <div class="fw-semibold mt-1">Fee: $499</div>
+                <div class="mt-auto pt-3">
+                  <button
+                    class="btn btn-brand text-white w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#detailsModal"
+                    data-title="Web Development"
+                    data-duration="8 Weeks"
+                    data-fee="$499"
+                    data-desc="Learn HTML, CSS, Bootstrap, JavaScript, and build responsive projects with portfolio-ready outcomes."
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="./images/python.jpg"
+                alt="Python Programming"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Python Programming</h5>
+                <div class="text-muted">Duration: 6 Weeks</div>
+                <div class="fw-semibold mt-1">Fee: $399</div>
+                <div class="mt-auto pt-3">
+                  <button
+                    class="btn btn-brand text-white w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#detailsModal"
+                    data-title="Python Programming"
+                    data-duration="6 Weeks"
+                    data-fee="$399"
+                    data-desc="Master Python fundamentals, data handling, and automation projects with hands-on learning."
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="./images/ds.jpg"
+                alt="Data Science"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Data Science</h5>
+                <div class="text-muted">Duration: 10 Weeks</div>
+                <div class="fw-semibold mt-1">Fee: $649</div>
+                <div class="mt-auto pt-3">
+                  <button
+                    class="btn btn-brand text-white w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#detailsModal"
+                    data-title="Data Science"
+                    data-duration="10 Weeks"
+                    data-fee="$649"
+                    data-desc="Work with statistics, visualization, and ML basics to create end-to-end analytics projects."
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="./images/aiml.jpg"
+                alt="AI & Machine Learning"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">AI & Machine Learning</h5>
+                <div class="text-muted">Duration: 12 Weeks</div>
+                <div class="fw-semibold mt-1">Fee: $749</div>
+                <div class="mt-auto pt-3">
+                  <button
+                    class="btn btn-brand text-white w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#detailsModal"
+                    data-title="AI & Machine Learning"
+                    data-duration="12 Weeks"
+                    data-fee="$749"
+                    data-desc="Understand model training, evaluation, and build intelligent solutions using practical datasets."
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="./images/java.jpg"
+                alt="Java Programming"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Java Programming</h5>
+                <div class="text-muted">Duration: 7 Weeks</div>
+                <div class="fw-semibold mt-1">Fee: $429</div>
+                <div class="mt-auto pt-3">
+                  <button
+                    class="btn btn-brand text-white w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#detailsModal"
+                    data-title="Java Programming"
+                    data-duration="7 Weeks"
+                    data-fee="$429"
+                    data-desc="Learn core Java, OOP concepts, and build APIs and applications with guided labs."
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="./images/cc.jpg"
+                alt="Cloud Computing"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Cloud Computing</h5>
+                <div class="text-muted">Duration: 8 Weeks</div>
+                <div class="fw-semibold mt-1">Fee: $529</div>
+                <div class="mt-auto pt-3">
+                  <button
+                    class="btn btn-brand text-white w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#detailsModal"
+                    data-title="Cloud Computing"
+                    data-duration="8 Weeks"
+                    data-fee="$529"
+                    data-desc="Deploy scalable apps, understand cloud fundamentals, and learn DevOps-style workflows."
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="mb-5">
+        <div class="mb-3">
+          <h2 class="fw-bold mb-0">Student Testimonials</h2>
+          <p class="text-muted mb-0">Real feedback from learners.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="testimonial-card card h-100 p-3">
+              <div class="d-flex align-items-center mb-2">
+                <img
+                  class="rounded-circle"
+                  src="./images/priya.png"
+                  width="44"
+                  height="44"
+                  alt="Student"
+                />
+                <div class="ms-2">
+                  <div class="fw-semibold">Priya .</div>
+                  <div class="text-muted small">Web Development</div>
+                </div>
+              </div>
+              <p class="mb-0">
+                The projects helped me understand Bootstrap and JavaScript
+                deeply. The guidance was excellent.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card card h-100 p-3">
+              <div class="d-flex align-items-center mb-2">
+                <img
+                  class="rounded-circle"
+                  src="https://picsum.photos/seed/student2/80"
+                  width="44"
+                  height="44"
+                  alt="Student"
+                />
+                <div class="ms-2">
+                  <div class="fw-semibold">Ravi S.</div>
+                  <div class="text-muted small">Python Programming</div>
+                </div>
+              </div>
+              <p class="mb-0">
+                Clear teaching and hands-on labs. I built automation scripts I
+                use in my internship daily.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card card h-100 p-3">
+              <div class="d-flex align-items-center mb-2">
+                <img
+                  class="rounded-circle"
+                  src="https://picsum.photos/seed/student3/80"
+                  width="44"
+                  height="44"
+                  alt="Student"
+                />
+                <div class="ms-2">
+                  <div class="fw-semibold">Neha M.</div>
+                  <div class="text-muted small">AI & Machine Learning</div>
+                </div>
+              </div>
+              <p class="mb-0">
+                The course structure made AI concepts easier. My final model
+                evaluation project was impressive.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Details Modal -->
+    <div
+      class="modal fade"
+      id="detailsModal"
+      tabindex="-1"
+      aria-labelledby="detailsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="detailsModalLabel">
+              Course Details
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4 align-items-start">
+              <div class="col-lg-7">
+                <h3 class="fw-bold" id="modalTitle">Course Name</h3>
+                <div class="text-muted" id="modalDuration">Duration</div>
+                <div class="fw-semibold mt-1" id="modalFee">Fee</div>
+                <p class="mt-3" id="modalDesc">Description</p>
+              </div>
+              <div class="col-lg-5">
+                <div class="alert alert-primary mb-0" role="alert">
+                  <div class="fw-semibold">Ready to join?</div>
+                  <div class="small text-white-50">
+                    Register in minutes and get course materials.
+                  </div>
+                </div>
+                <a
+                  class="btn btn-brand text-white w-100 mt-3"
+                  href="register.html"
+                  >Register for this course</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="loginModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="••••••••"
+                />
+              </div>
+              <button type="button" class="btn btn-brand text-white w-100">
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="fw-bold mb-2">CVR College Of Engineering</div>
+            <div class="text-light small">
+              Training for future-ready careers.
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="fw-semibold mb-2">Address</div>
+            <div class="text-light small">
+              221B, Knowledge Street, Tech City, India
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="fw-semibold mb-2">Contact</div>
+            <div class="text-light small">Phone: +91 98765 43210</div>
+            Email: support@cvrcoe.example
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-wrap gap-3 align-items-center justify-content-between mt-4 pt-3 border-top border-light border-opacity-25"
+        >
+          <div class="text-light small">
+            © <span id="year"></span> CVR College of Engineering . All rights
+            reserved.
+          </div>
+          <div class="d-flex gap-3">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const detailsModal = document.getElementById("detailsModal");
+      detailsModal.addEventListener("show.bs.modal", (event) => {
+        const button = event.relatedTarget;
+        const title = button.getAttribute("data-title") || "";
+        const duration = button.getAttribute("data-duration") || "";
+        const fee = button.getAttribute("data-fee") || "";
+        const desc = button.getAttribute("data-desc") || "";
+
+        document.getElementById("modalTitle").textContent = title;
+        document.getElementById("modalDuration").textContent =
+          `Duration: ${duration}`;
+        document.getElementById("modalFee").textContent = `Fee: ${fee}`;
+        document.getElementById("modalDesc").textContent = desc;
+        document.getElementById("detailsModalLabel").textContent =
+          "Course Details";
+      });
+    </script>
+  </body>
+</html>

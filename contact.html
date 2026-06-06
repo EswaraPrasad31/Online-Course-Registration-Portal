@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Course Registration Portal - Contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img alt="Institute logo" src="./images/cvr.webp" />
+          <span class="fw-semibold">CVR College of Engineering</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample"
+          aria-controls="navbarsExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#login"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-4">
+      <section class="mb-4">
+        <h1 class="fw-bold">Contact Us</h1>
+        <p class="text-muted">
+          Send your message. We usually respond within 1 business day.
+        </p>
+      </section>
+
+      <section class="row g-4 mb-4">
+        <div class="col-lg-7">
+          <div class="card course-card p-4">
+            <h3 class="fw-bold mb-3">Contact Form</h3>
+
+            <form id="contactForm" class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="cName">Name *</label>
+                <input type="text" class="form-control" id="cName" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="cEmail">Email *</label>
+                <input type="email" class="form-control" id="cEmail" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="cPhone">Phone</label>
+                <input type="tel" class="form-control" id="cPhone" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="cSubject">Subject *</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cSubject"
+                  required
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="cMessage">Message *</label>
+                <textarea
+                  class="form-control"
+                  id="cMessage"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="col-12 d-flex flex-wrap gap-2 align-items-center">
+                <button type="submit" class="btn btn-brand text-white">
+                  Send Message
+                </button>
+                <div
+                  id="contactAlert"
+                  class="alert alert-success d-none mb-0"
+                  role="alert"
+                >
+                  Message sent successfully!
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card course-card p-4 h-100">
+            <h3 class="fw-bold mb-3">Google Map Placeholder</h3>
+            <div class="map-placeholder">
+              <div class="text-center">
+                <div class="fw-semibold">Map will appear here</div>
+                <div class="small text-muted">
+                  (Placeholder for Google Maps embed)
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <h3 class="fw-bold">Address Information</h3>
+              <div class="text-muted small mt-2">
+                221B, Knowledge Street<br />
+                Tech City, India<br />
+                <div class="mt-2">Phone: +91 98765 43210</div>
+                Email: support@cvrcoe.example
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="loginModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="••••••••"
+                />
+              </div>
+              <button type="button" class="btn btn-brand text-white w-100">
+                Login
+              </button>
+              <div class="text-muted small mt-2">
+                (Demo modal - no backend connected)
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="fw-bold mb-2">CVR College of Engineering</div>
+            <div class="text-light small">
+              Training for future-ready careers.
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="fw-semibold mb-2">Address</div>
+            <div class="text-light small">
+              221B, Knowledge Street, Tech City, India
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="fw-semibold mb-2">Contact</div>
+            <div class="text-light small">Phone: +91 98765 43210</div>
+            <div class="text-light small">Email: support@cvrcoe.example</div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-wrap gap-3 align-items-center justify-content-between mt-4 pt-3 border-top border-light border-opacity-25"
+        >
+          <div class="text-light small">
+            © <span id="year"></span> CVR College of Engineering . All rights
+            reserved.
+          </div>
+          <div class="d-flex gap-3">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const contactForm = document.getElementById("contactForm");
+      const contactAlert = document.getElementById("contactAlert");
+
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        contactAlert.classList.remove("d-none");
+        contactAlert.scrollIntoView({ behavior: "smooth", block: "start" });
+        contactForm.reset();
+      });
+    </script>
+  </body>
+</html>

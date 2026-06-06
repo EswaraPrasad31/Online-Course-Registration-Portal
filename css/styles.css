@@ -1,0 +1,100 @@
+:root {
+  --brand: #0d6efd;
+  --dark: #0b1320;
+  --muted: #6c757d;
+  --radius: 16px;
+}
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  background: #f8fafc;
+  color: #0b1320;
+}
+.navbar-brand img {
+  height: 38px;
+  width: auto;
+}
+.hero {
+  background: linear-gradient(
+    135deg,
+    rgba(13, 110, 253, 0.15),
+    rgba(13, 110, 253, 0.02)
+  );
+  border-radius: 20px;
+}
+.section-title {
+  letter-spacing: 0.2px;
+}
+.card-img-top {
+  height: 170px;
+  object-fit: cover;
+}
+.course-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(13, 110, 253, 0.15);
+}
+.course-card .card-body {
+  padding: 1rem;
+}
+.testimonial-card {
+  border-radius: var(--radius);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+footer {
+  background: #0b1320;
+  color: #cbd5e1;
+  margin-top: 2rem;
+}
+footer a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #bfdbfe;
+  text-decoration: underline;
+}
+.map-placeholder {
+  min-height: 260px;
+  border: 2px dashed rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.03);
+}
+.btn-brand {
+  background: var(--brand);
+  border-color: var(--brand);
+}
+.btn-brand:hover {
+  background: #0b5ed7;
+  border-color: #0b5ed7;
+}
+
+#heroCarousel {
+    height: 400px;
+}
+
+#heroCarousel .carousel-inner,
+#heroCarousel .carousel-item,
+#heroCarousel img {
+    height: 100%;
+}
+
+#heroCarousel img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    #heroCarousel {
+        height: 250px;
+    }
+}

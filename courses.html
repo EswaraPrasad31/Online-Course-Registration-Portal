@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Course Registration Portal - Courses</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img
+            alt="Institute logo"
+            src="./images/cvr.webp"
+          />
+          <span class="fw-semibold">CVR College Of Engineering</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample"
+          aria-controls="navbarsExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="courses.html"
+                >Courses</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#login"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-4">
+      <section class="mb-4">
+        <h1 class="fw-bold">Available Courses</h1>
+        <p class="text-muted">
+          Choose your track and register online. Each course includes guidance
+          and project-based learning.
+        </p>
+      </section>
+
+      <section class="mb-5">
+        <div class="row g-4">
+          <!-- Web Dev -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="./images/wb1.jpg"
+                alt="Web Development"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Web Development</h5>
+                <div class="text-muted">Duration: 8 Weeks</div>
+                <div class="fw-semibold mt-1">Fee: $499</div>
+                <div class="mt-auto pt-3">
+                  <a class="btn btn-brand text-white w-100" href="register.html"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="./images/python.jpg"
+                alt="Python Programming"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Python Programming</h5>
+                <div class="text-muted">Duration: 6 Weeks</div>
+                <div class="fw-semibold mt-1">Fee: $399</div>
+                <div class="mt-auto pt-3">
+                  <a class="btn btn-brand text-white w-100" href="register.html"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Science -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="./images/data-science.jpg"
+                alt="Data Science"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Data Science</h5>
+                <div class="text-muted">Duration: 10 Weeks</div>
+                <div class="fw-semibold mt-1">Fee: $649</div>
+                <div class="mt-auto pt-3">
+                  <a class="btn btn-brand text-white w-100" href="register.html"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI/ML -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="./images/aiml.jpg"
+                alt="AI & Machine Learning"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">AI & Machine Learning</h5>
+                <div class="text-muted">Duration: 12 Weeks</div>
+                <div class="fw-semibold mt-1">Fee: $749</div>
+                <div class="mt-auto pt-3">
+                  <a class="btn btn-brand text-white w-100" href="register.html"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Java -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="./images/java.jpg"
+                alt="Java Programming"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Java Programming</h5>
+                <div class="text-muted">Duration: 7 Weeks</div>
+                <div class="fw-semibold mt-1">Fee: $429</div>
+                <div class="mt-auto pt-3">
+                  <a class="btn btn-brand text-white w-100" href="register.html"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cloud -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card course-card h-100">
+              <img
+                class="card-img-top"
+                src="./images/cc.jpg"
+                alt="Cloud Computing"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Cloud Computing</h5>
+                <div class="text-muted">Duration: 8 Weeks</div>
+                <div class="fw-semibold mt-1">Fee: $529</div>
+                <div class="mt-auto pt-3">
+                  <a class="btn btn-brand text-white w-100" href="register.html"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="alert alert-info">
+        <div class="fw-semibold">Tip</div>
+        <div class="small">
+          Want to know which course is best? Visit
+          <a href="about.html" class="fw-semibold">About Us</a> to see faculty
+          and guidance.
+        </div>
+      </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="loginModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="••••••••"
+                />
+              </div>
+              <button type="button" class="btn btn-brand text-white w-100">
+                Login
+              </button>
+              <div class="text-muted small mt-2">
+                (Demo modal - no backend connected)
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="fw-bold mb-2">CVR College Of Engineering</div>
+            <div class="text-light small">
+              Training for future-ready careers.
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="fw-semibold mb-2">Address</div>
+            <div class="text-light small">
+              221B, Knowledge Street, Tech City, India
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="fw-semibold mb-2">Contact</div>
+            <div class="text-light small">Phone: +91 98765 43210</div>
+            <div class="text-light small">
+              Email: support@cvrcoe.example
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-wrap gap-3 align-items-center justify-content-between mt-4 pt-3 border-top border-light border-opacity-25"
+        >
+          <div class="text-light small">
+            © <span id="year"></span> CVR College Of Engineering . All rights
+            reserved.
+          </div>
+          <div class="d-flex gap-3">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
